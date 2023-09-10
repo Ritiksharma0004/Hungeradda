@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="../Login/login.css"> -->
+</head>
+
+<body>
+
+    <div class="first">
+        <div class="header">
+            <h1 id="logo">Hunger Adda</h1>
+
+            <ul>
+                <!-- <li><a href="">About Us</a></li> -->
+                <li><a href="../Login/login.html" id="Acess-btn">Login</a></li>
+                <li><a href="../signup/signup.html" id="Acess-btn">Sign Up</a></li>
+            </ul>
+
+        </div>
+
+        <div class="container">
+            <div class="left">
+                <h1><span id="element"></span></h1>
+                <div class="para">
+                    <p>Order Food From Your Favourite Restaurant.</p> <br> <br> <br>
+
+
+                    <form action="" id="left-form">
+                        <div class="form">
+                            <div class="form-element">
+                                <input type="text" name="text" id="text" required placeholder="Enter Your Location">
+                                <button class="btn">GET STARTED</button>
+                            </div>
+                            <!-- <a href="" id="sign-up">Sign Up</a> -->
+                            <a href="" id="contact">Contact</a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <!-- <div class="right">
+            <img src="./images/food.jpg" alt="">
+        </div> -->
+
+        </div>
+    </div>
+
+    <button class="open" onclick="openForm()">Chat</button>
+
+    <div class="Pop-up" id="myForm">
+        <form action="" id="chat">
+            <h1>Chat</h1>
+            <textarea name="area" id="area" cols="30" rows="10" placeholder="Type your message"></textarea> <br>
+            <button type="button" class="send">Send</button> <br>
+            <button type="button" class="close" onclick="minimizeForm()">Close</button>
+        </form>
+    </div>
+
+
+    </div>
+    </div>
+    <footer class="foot">
+        <div class="comp">
+            <h2>Company</h2>
+            <a href="">About</a>
+            <a href="../Dashboardd/dashboard.html/#4">Team</a>
+            <a href="../Policy/policy.html" download="">Privacy Policy</a>
+            <a href="">Term & Condition</a>
+        </div>
+        <div class="social">
+            <h2>Social</h2>
+            <div class="fb">
+                <a href="https://www.facebook.com/people/Hunger-Adda/pfbid02hjKY4KXVdBCLKjYF4pjj79Z5gjSp6vuQ4UX33Hfp7CjT4zv948cQorX3drA227gxl/?mibextid=D4KYlr"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="insta">
+                <a href="https://www.instagram.com/hungerr_adda/?utm_source=qr&igshid=OGIxMTE0OTdkZA%3D%3D">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+            <div class="twi">
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fhunger_adda">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <div class="content">
+            <input type="text" placeholder="Name">
+            <div class="message">
+                <textarea name="textarea" id="textarea" cols="30" rows="6" placeholder="Enter your message"></textarea>
+            </div>
+            <button>Send</button>
+        </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./main.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ["HUNGRY ?", "Gaming tonight ?", "Can't cook ?", "Try Delecious Variety"],
+            typeSpeed: 130,
+            backspeed: 80,
+            loop: isFinite,
+        });
+
+        // function openForm() {
+        //     document.getElementsByClassName('Pop-up').style.display = "block";
+        // }
+
+        // function minimizeForm() {
+        //     document.getElementsByClassName('Pop-up').style.display = "none";
+        // }
+
+    </script>
+
+</body>
+
+</html>
