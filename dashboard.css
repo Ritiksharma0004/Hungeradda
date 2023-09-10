@@ -1,0 +1,1081 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:ital,wght@1,100;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: azure;
+    overflow-x: hidden;
+}
+
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    background-image: url(../images/db.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-color: white; */
+    height: 110vh;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.header .logo {
+    position: relative;
+    left: .4rem;
+    top: 2rem;
+    width: auto;
+    font-size: 5rem;
+    text-align: center;
+    color: orange;
+    font-weight: 900;
+    font-family: 'Caveat', cursive;
+}
+
+.header ul {
+    position: fixed;
+    display: flex;
+    right: 7vw;
+    top: 4rem;
+    z-index: 10;
+}
+
+.header ul li {
+    margin: 15px;
+}
+
+.header ul li a {
+    color: rgb(3, 109, 109);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Roboto;
+}
+
+.header ul li a:hover {
+    color: rgb(125, 195, 195);
+}
+
+.header #login {
+    background-color: rgb(15, 13, 13);
+    color: white;
+    padding: 8px;
+    letter-spacing: 3px;
+}
+
+.header #login:hover {
+    background-color: #f0ebeb;
+    color: black;
+}
+
+.Pop-up {
+    /* visibility: hidden; */
+    display: block;
+    position: fixed;
+    align-items: center;
+    right: 36%;
+    width: 30vw;
+    top: 18vh;
+    height: 60vh;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 3px solid #f1f1f1;
+    /* border-top: 5px solid green;
+    border-bottom: 5px solid yellow;
+    border-left: 5px solid red;
+    border-right: 5px solid blue; */
+    /* animation: disco 1s linear 0s infinite forwards; */
+    /* animation: borderRadial var(--d) linear infinite forwards; */
+    /* animation: borderRotate var(--d) linear infinite forwards; */
+    transition: all 1s;
+    z-index: 9;
+}
+
+/* 
+@keyframes disco {
+    0% {
+          border-top: 2px solid red;;
+    }
+
+    25% {
+        border-right: 2px solid green;
+    }
+
+    75% {
+        border-bottom: 2px solid blue;
+    }
+
+    100% {
+        border-left: 2px solid yellow;
+    }
+} */
+
+
+/* @keyframes borderRotate {
+    100% {
+        --angle: 420deg;
+    }
+}
+
+@keyframes borderRadial {
+    20% {
+        --gradX: 100%;
+        --gradY: 50%;
+    }
+
+    40% {
+        --gradX: 100%;
+        --gradY: 100%;
+    }
+
+    60% {
+        --gradX: 50%;
+        --gradY: 100%;
+    }
+
+    80% {
+        --gradX: 0%;
+        --gradY: 50%;
+    }
+
+    100% {
+        --gradX: 50%;
+        --gradY: 0%;
+    }
+} */
+
+#close {
+    position: relative;
+    top: -55vh;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#close i {
+    width: 50px;
+}
+
+#close i:hover {
+    color: red;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+h3 {
+    text-align: center;
+    margin: 5vh;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.email {
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.email input {
+    width: 24vw;
+    height: 8vh;
+    border-radius: 2vw;
+    margin-left: -2vw;
+    text-align: center;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.password {
+    margin-top: 3vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.password input {
+    width: 24vw;
+    height: 8vh;
+    border-radius: 2vw;
+    margin-left: -2vw;
+    text-align: center;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.forgot {
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.log {
+    margin-top: 2vh;
+    margin-left: 3.5vw;
+    margin-right: 3vw;
+    width: 20vw;
+    height: 8vh;
+    color: black;
+    background-color: blueviolet;
+    border-radius: 2.5vw;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.sign {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.sign a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+button i {
+    color: black;
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+.head-lines {
+    position: relative;
+    /* background-color: rgb(85, 47, 47); */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 70vw;
+    top: 30%;
+    height: 40vh;
+}
+
+.head-lines .para1 {
+    position: relative;
+    display: flex;
+    left: 60px;
+    top: 2vh;
+}
+
+.head-lines .para1 h1 {
+    position: relative;
+    /* color: rgb(227, 215, 51); */
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 5px rgb(12, 63, 135);
+    font-size: 7.7em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.head-lines .para1 p {
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    left: 17px;
+    font-size: 3.7em;
+    font-weight: 700;
+    /* color: rgb(87, 255, 93); */
+    color: rgb(255, 255, 255);
+}
+
+.head-lines .para1 p span {
+    position: absolute;
+    left: 17px;
+    margin-top: 2vh;
+    font-family: 'Times New Roman', Times, serif;
+    /* color: rgba(87, 255, 93);
+     */
+     color: rgb(255, 255, 255);
+}
+
+/* 
+.container .para2 {
+   
+} */
+
+.container .para2 h1 {
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    /* color: rgb(246, 249, 74); */
+    color: rgb(67, 166, 212);
+    left: 7vw;
+    top: 2vh;
+    font-size: 3em;
+    margin-top: 6px;
+}
+
+#container-btn {
+    position: relative;
+    background-color: black;
+    color: white;
+    top: 20vh;
+    left: 60vw;
+    width: 16vw;
+    text-align: center;
+    font-weight: 900;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+#container-btn:hover {
+    cursor: pointer;
+}
+
+/* ---------------------------------------- container2 ------------------------------------ */
+
+.container2 {
+    /* background-color: rgba(92, 183, 35, 0.182); */
+    background-color: white;
+    height: 56vh;
+}
+
+.container2 h1 {
+    position: relative;
+    text-align: center;
+    right: 23vw;
+    top: 20px;
+    font-size: 3rem;
+}
+
+.container2 img {
+    position: relative;
+    left: 4vw;
+    width: 200px;
+    height: 200px;
+    margin: 60px;
+    border-radius: 40px;
+    z-index: 2;
+}
+
+
+.container2 img:hover {
+    transition: all .6s;
+    transform: scale(1.2);
+}
+
+.container2 .item-name {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    top: -5vh;
+    right: 4vw;
+}
+
+.container2 #dosa {
+    position: relative;
+    left: 20px;
+    z-index: 2;
+}
+
+.ellipse {
+    position: relative;
+    float: right;
+    top: -45vh;
+    width: 520px;
+    border-left-width: 300px;
+    height: 300px;
+    border-radius: 90% 0% 0% 90%;
+    background: #5F473A;
+}
+
+
+/* -------------------------------------- container3- --------------------------------- */
+
+.container3 {
+    background-color: whitesmoke;
+    height: 70vh;
+}
+
+.container3 h1 {
+    position: relative;
+    text-align: center;
+    left: -11vw;
+    font-size: 4rem;
+    font-family: serif;
+    top: 20px;
+}
+
+.container3 .img {
+    position: relative;
+}
+
+.container3 img {
+    position: relative;
+    left: 4vw;
+    width: 250px;
+    height: 250px;
+    margin-left: 70px;
+    top: 10vh;
+    left: 15vw;
+    border-radius: 40px;
+}
+
+.container3 .special-para {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    top: 13vh;
+    right: 4vw;
+}
+
+#img1 {
+    position: relative;
+    left: 8vw;
+}
+
+#img2 {
+    position: relative;
+    left: 15vw;
+}
+
+#img3 {
+    position: relative;
+    left: 23vw;
+}
+
+#quality {
+    position: relative;
+    text-align: center;
+    line-height: 36px;
+    left: 2vw;
+}
+
+#product {
+    position: relative;
+    text-align: center;
+    left: 2vw;
+}
+
+#clean {
+    position: relative;
+    text-align: center;
+    left: 4vw;
+}
+
+/* ---------------------------------- container4 -------------------------------------------- */
+
+.container4 {
+    position: relative;
+    height: 173vh;
+    background-color: white;
+}
+
+.container4 img {
+    position: relative;
+    float: left;
+    width: 1000px;
+    top: 3vh;
+}
+
+#mission {
+    border-radius: 0px 20px 20px 0px;
+    margin-right: 2vw;
+}
+
+.container4 .text {
+    position: relative;
+    text-align: center;
+    top: 10vh;
+}
+
+.text h2 {
+    font-size: 3.7rem;
+    margin-bottom: 30px;
+    /* top: -2vh; */
+}
+
+
+#sustain {
+    position: relative;
+    float: right;
+    top: 12vh;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#text {
+    position: relative;
+    float: left;
+    top: 12vh;
+    text-align: center;
+    margin: 2vw;
+}
+
+#text h2 {
+    font-size: 3.7rem;
+    margin-bottom: 30px;
+}
+
+#text p {
+    position: relative;
+    width: 450px;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.high-demand {
+    position: relative;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    height: 118vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+#mission {
+    font-size: 30px;
+}
+
+.demand-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.high-demand img {
+    position: relative;
+    align-items: center;
+    margin: 8%;
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+}
+
+.high-demand h1 {
+    font-family: 'Caveat', cursive;
+}
+
+.high-demand h2 {
+    position: relative;
+    left: 5vw;
+}
+
+.high-demand span {
+    position: relative;
+    top: 8vh;
+    right: 14vw;
+    font-family: 'Caveat', cursive;
+}
+
+.demand-container p {
+    position: relative;
+    width: 40vw;
+    text-align: center;
+    top: 13vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ---------------------------------- about---------------------------------- */
+
+.about {
+    height: 195vh;
+    background-color: black;
+    color: white;
+}
+
+.about #home {
+    position: relative;
+    top: 2vh;
+    margin: 20px;
+}
+
+.about h1 {
+    position: relative;
+    top: 7vh;
+    margin: 20px;
+    left: 6vw;
+}
+
+.about h2 {
+    position: relative;
+    left: 7vw;
+    font-size: 32px;
+}
+
+.about p {
+    position: relative;
+    text-align: center;
+    width: 968px;
+    height: 210px;
+    left: 16%;
+    top: 3vh;
+    font-size: 20px;
+}
+
+
+/* -------------------- glimphs------------------------------- */
+
+.Glimps {
+    /* position: relative; */
+    margin-top: 8vh;
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+.Glimps h2 {
+    position: relative;
+    left: 40%;
+    top: 8vh;
+    font-size: 50px;
+}
+
+.glimps-pic {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 10px;
+    left: 23vw;
+    top: 15vh;
+    background-color: #41994b;
+    height: 100vh;
+    width: 55%;
+}
+
+.p1 img {
+    width: 20vw;
+    height: auto;
+}
+
+.pic {
+    position: relative;
+    background-color: chocolate;
+}
+
+.p2 {
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+.p2 img {
+    width: 17vw;
+}
+
+.p6 {
+    grid-column: 1/4;
+}
+
+
+/* ---------------------------- ritesh cssssss---------------------------------- */
+
+
+.our-team {
+    background-color: rgb(80, 233, 197);
+    color: white;
+    width: 100%;
+    height: 50vh;
+}
+
+.our-team h1 {
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    top: 2vh;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.FirstContainer {
+    display: flex;
+    padding: 1.8rem;
+}
+
+.FirstContainer img {
+    border-style: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.FirstContainer img:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(2);
+}
+
+/* .FirstContainer p{
+   
+    text-align: center;
+    
+} */
+.main-c1 {
+    margin-top: 5vh;
+    margin-left: 2rem;
+}
+
+
+.SecondContainer {
+    padding: 1.8rem;
+    display: flex;
+    margin-right: 2rem;
+}
+
+.SecondContainer img {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-style: none;
+
+
+
+}
+
+.SecondContainer img:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(2);
+}
+
+.main-c2 {
+    margin-top: 5vh;
+    margin-left: 2rem;
+}
+
+.main2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.main2-1container {
+    padding: 1.8rem;
+    display: flex;
+}
+
+.main2-1container img {
+    border-style: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.main2-1container img:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(2);
+}
+
+.main2-c1 {
+    margin-top: 5vh;
+    margin-left: 2rem;
+}
+
+.main2-2container {
+    display: flex;
+    padding: 1.8rem;
+}
+
+.main2-2container img {
+    border-style: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.main2-2container img:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(2);
+}
+
+.main2-c2 {
+    margin-top: 5vh;
+    margin-left: 2rem;
+
+        
+        width: 100%;
+        height: 55%;
+    }
+
+    .our-team {
+        width: 100%;
+        height: 55%;
+
+    }
+
+    .our-team h1 {
+        font-size: 50px;
+        text-align: center;
+        text-shadow: 1rem;
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    .FirstContainer {
+        display: flex;
+        padding: 1.8rem;
+    }
+
+    .FirstContainer img {
+        border-style: none;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .FirstContainer img:hover {
+        cursor: pointer;
+        transition: all 1s;
+        transform: scale(2);
+    }
+
+    /* .FirstContainer p{
+   
+    text-align: center;
+    
+} */
+    .main-c1 {
+        margin-top: 5vh;
+        margin-left: 2rem;
+    }
+
+
+    .SecondContainer {
+        padding: 1.8rem;
+        display: flex;
+        margin-right: 2rem;
+    }
+
+    .SecondContainer img {
+
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border-style: none;
+
+
+
+    }
+
+    .SecondContainer img:hover {
+        cursor: pointer;
+        transition: all 1s;
+        transform: scale(2);
+    }
+
+    .main-c2 {
+        margin-top: 5vh;
+        margin-left: 2rem;
+    }
+
+    .main2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    .main2-1container {
+        padding: 1.8rem;
+        display: flex;
+    }
+
+    .main2-1container img {
+        border-style: none;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+
+    }
+
+    .main2-1container img:hover {
+        cursor: pointer;
+        transition: all 1s;
+        transform: scale(2);
+    }
+
+   #profession {
+    position: relative;
+    margin-top: 2vh;
+   }
+
+
+
+   /* ------------------------ Responsive----------------------------- */
+
+
+   /* @media screen and (max-width:790px) {
+    
+       .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+       }
+
+   } */
+
+/* ------------------------------------------- header section--------------------------------------- */
+
+/* Default styles for larger screens */
+
+/* Add your existing CSS code here */
+
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 1024px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    /* Adjustments for smaller desktop screens */
+  
+    /* Example: Adjusting the header logo size */
+    .header .logo {
+      font-size: 3rem;
+    }
+  
+    /* Example: Making navigation menu items stack vertically */
+    .header ul {
+      flex-direction: column;
+      align-items: center;
+      right: 0;
+      top: 4rem;
+    }
+  
+    /* Example: Reducing padding/margins for elements */
+    .container {
+      padding: 20px;
+    }
+  
+    /* You can continue to adjust other styles as needed */
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Adjustments for tablets and smaller desktop screens */
+  
+    /* Example: Further reducing the font size for headings */
+    .header .logo {
+      font-size: 2rem;
+    }
+  
+    /* Example: Making navigation menu items stack vertically */
+    .header ul {
+      flex-direction: column;
+      align-items: center;
+      right: 0;
+      top: 4rem;
+    }
+  
+    /* You may need to adjust other styles to optimize for smaller screens */
+  }
+  
+  @media screen and (max-width: 576px) {
+    /* Adjustments for mobile devices */
+  
+    /* Example: Reducing the font size for headings */
+    .header .logo {
+      font-size: 1.5rem;
+    }
+  
+    /* Example: Making navigation menu items stack vertically */
+    .header ul {
+      flex-direction: column;
+      align-items: center;
+      right: 0;
+      top: 4rem;
+    }
+  
+    /* Example: Adjusting padding/margins for smaller screens */
+    .container {
+      padding: 10px;
+    }
+  
+    /* You may need to adjust other styles to optimize for smaller screens */
+  }
+  
+  /* Additional media queries can be added as needed for finer control */
+  
+  /* Example: A media query for very small screens (e.g., watches) */
+  @media screen and (max-width: 320px) {
+    /* Adjustments for very small screens */
+  
+    /* Example: Further reducing the font size for headings */
+    .header .logo {
+      font-size: 1.2rem;
+    }
+  
+    /* You may need to make more specific adjustments for tiny screens */
+  }
+
+  
+
+
+
+  @media screen and (max-width: 768px) {
+    .container .head-lines .para1 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .container .head-lines .para1 h1 {
+      font-size: 4.5rem;
+    }
+  
+    .container .head-lines .para1 p {
+      font-size: 2.5rem;
+    }
+  }
+  
+  /* Responsive styles for even smaller screens */
+  @media screen and (max-width: 576px) {
+    .container .head-lines .para1 h1 {
+      font-size: 3rem;
+    }
+  
+    .container .head-lines .para1 p {
+      font-size: 2rem;
+    }
+  }
